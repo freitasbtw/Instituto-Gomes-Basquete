@@ -14,8 +14,12 @@ import {
 } from "lucide-react"
 import { FaFacebookF, FaInstagram, FaThreads, FaWhatsapp } from "react-icons/fa6"
 
-export const whatsappUrl =
-  "https://api.whatsapp.com/send?phone=555511952929246&text=aulas%20de%20basquete%20gratuito"
+const whatsappMessage =
+  "Olá! Tenho interesse nas aulas gratuitas de basquete do Instituto Gomes Basquete. Poderiam me informar os horários, faixas etárias e como fazer a inscrição?"
+
+export const whatsappUrl = `https://api.whatsapp.com/send?phone=555511952929246&text=${encodeURIComponent(
+  whatsappMessage
+)}`
 
 export const email = "institutogomesbasquete@gmail.com"
 
