@@ -5,7 +5,7 @@ import { ArrowUpRight } from "lucide-react"
 import { PageHero } from "@/components/site/page-hero"
 import { SectionHeading } from "@/components/site/section-heading"
 import { buttonVariants } from "@/components/ui/button"
-import { pillars } from "@/lib/site-data"
+import { pillars, siteImages } from "@/lib/site-data"
 import { cn } from "@/lib/utils"
 
 export const metadata = {
@@ -24,8 +24,8 @@ export default function QuemSomosPage() {
         <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-neutral-100">
             <Image
-              src="/images/treino-basquete.png"
-              alt="Crianças e adolescentes em treino de basquete"
+              src={siteImages.project}
+              alt="Professor Dante de Rose com crianças do Instituto Gomes Basquete"
               fill
               priority
               sizes="(min-width: 1024px) 42vw, 100vw"
@@ -62,7 +62,7 @@ export default function QuemSomosPage() {
           <SectionHeading
             label="Pilares"
             title="O que orienta o trabalho do instituto"
-            description="A arquitetura do site separa os conteúdos institucionais em páginas próprias, mas mantém estes pilares como base de toda a comunicação."
+            description="O trabalho do Instituto parte de uma relação próxima com os jovens e suas famílias, valorizando presença, respeito e continuidade."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {pillars.map((pillar) => (

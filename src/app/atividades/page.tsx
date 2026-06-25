@@ -4,7 +4,7 @@ import { Clock } from "lucide-react"
 import { PageHero } from "@/components/site/page-hero"
 import { SectionHeading } from "@/components/site/section-heading"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { activities, scheduleRows } from "@/lib/site-data"
+import { activities, scheduleRows, siteImages } from "@/lib/site-data"
 
 export const metadata = {
   title: "Atividades | Instituto Gomes Basquete",
@@ -22,8 +22,8 @@ export default function AtividadesPage() {
         <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[1fr_1fr] lg:items-center">
           <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-neutral-100">
             <Image
-              src="/images/atividades-comunidade.png"
-              alt="Atividades comunitárias do instituto"
+              src={siteImages.activities}
+              alt="Crianças e adolescentes em treino coletivo de basquete"
               fill
               priority
               sizes="(min-width: 1024px) 48vw, 100vw"
@@ -33,7 +33,7 @@ export default function AtividadesPage() {
           <SectionHeading
             label="Formação integral"
             title="A rotina vai além da quadra."
-            description="Basquete, xadrez e fitboxe aparecem como frentes atuais. A página concentra a programação para evitar que a Home fique carregada."
+            description="Basquete, xadrez e fitbox ajudam a desenvolver disciplina, raciocínio, condicionamento e convivência. Cada atividade reforça uma parte da formação dos jovens."
           />
         </div>
       </section>
@@ -72,7 +72,7 @@ export default function AtividadesPage() {
           <SectionHeading
             label="Agenda"
             title="Horários de atividades complementares"
-            description="A agenda pode ser atualizada aqui sem alterar a estrutura principal da Home."
+            description="As atividades complementares ampliam a rotina esportiva com foco, estratégia, saúde e bem-estar."
           />
           <div className="mt-10 divide-y divide-neutral-200 border-y border-neutral-200">
             {scheduleRows.map((row) => (

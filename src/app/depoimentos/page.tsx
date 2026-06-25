@@ -16,21 +16,22 @@ export default function DepoimentosPage() {
     <main className="bg-white text-neutral-950">
       <PageHero
         title="Depoimentos"
-        description="Uma página para separar depoimentos históricos de antigos atletas e feedbacks atuais enviados por pais e responsáveis."
+        description="Relatos de famílias, responsáveis e atletas ajudam a mostrar o impacto do Instituto Gomes Basquete dentro e fora da quadra."
       />
 
       <section className="py-16 md:py-24">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr]">
           <SectionHeading
-            label="Antigos atletas"
-            title="Depoimentos históricos dos jovens que passaram pelo instituto."
-            description="Este bloco foi pensado para resgatar registros feitos quando antigos atletas tinham entre 15 e 17 anos, preservando memória, identidade e impacto de longo prazo."
+            label="Vozes da comunidade"
+            title="Histórias que acompanham o crescimento dos jovens."
+            description="O Instituto valoriza cada relato de evolução, disciplina, convivência e pertencimento. Essas histórias ajudam famílias, parceiros e novos alunos a entenderem a força do projeto."
           />
           <div className="rounded-lg border border-neutral-200 p-6">
             <Quote className="size-8 text-[#f05a28]" />
             <p className="mt-5 text-xl leading-9 text-neutral-800">
-              Espaço reservado para inserir os depoimentos reais dos antigos
-              atletas, com nome, idade na época do registro, ano e contexto.
+              Os depoimentos recebidos pela coordenação registram mudanças de
+              comportamento, melhora na rotina, novos vínculos e orgulho de
+              pertencer ao Instituto.
             </p>
           </div>
         </div>
@@ -41,7 +42,7 @@ export default function DepoimentosPage() {
           <SectionHeading
             label="Feedback da comunidade"
             title="Relatos atuais dos pais e responsáveis"
-            description="A área foi estruturada para receber mensagens que chegam à coordenação sobre comportamento, disciplina, convivência e impacto familiar."
+            description="As famílias acompanham de perto a presença do esporte na vida das crianças e adolescentes."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {communityFeedback.map((feedback) => (
@@ -61,8 +62,8 @@ export default function DepoimentosPage() {
           </h2>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-neutral-300">
             Pais, responsáveis e antigos atletas podem enviar feedbacks e
-            registros pelo e-mail institucional. Depois, a coordenação pode
-            selecionar quais depoimentos entram no site.
+            registros pelo e-mail institucional. Cada mensagem ajuda a preservar
+            a memória do projeto e a mostrar seu impacto para a comunidade.
           </p>
           <a
             className={cn(

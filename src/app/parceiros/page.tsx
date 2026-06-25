@@ -34,15 +34,15 @@ export default function ParceirosPage() {
     <main className="bg-white text-neutral-950">
       <PageHero
         title="Parceiros"
-        description="Uma área dedicada para exibir marcas, empresas e apoiadores do Instituto Gomes Basquete sem ocupar espaço excessivo na Home."
+        description="O Instituto Gomes Basquete conta com apoiadores que acreditam no esporte como caminho de formação, convivência e oportunidade."
       />
 
       <section className="py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <SectionHeading
             label="Apoiadores"
-            title="Espaço preparado para marcas parceiras"
-            description="Quando os logos oficiais forem enviados, eles podem ser adicionados nesta página em grupos de apoio. A Home pode destacar apenas os parceiros principais."
+            title="Parcerias que fortalecem a continuidade do projeto"
+            description="O apoio de empresas, comércios, instituições e pessoas da comunidade ajuda a manter atividades, materiais esportivos, eventos e oportunidades para os jovens."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {partnerTypes.map((type) => (

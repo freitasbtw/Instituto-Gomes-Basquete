@@ -14,6 +14,7 @@ import {
   mapsSearchUrl,
   pillars,
   scheduleRows,
+  siteImages,
   whatsappUrl,
 } from "@/lib/site-data"
 import { cn } from "@/lib/utils"
@@ -78,8 +79,8 @@ export default function Home() {
             <div className="absolute -top-6 -right-4 hidden h-28 w-28 rounded-full border-[16px] border-[#f05a28] opacity-90 md:block" />
             <div className="relative aspect-[16/10] overflow-hidden rounded-lg border border-neutral-200 bg-neutral-100 shadow-[0_24px_70px_rgba(15,15,15,0.16)]">
               <Image
-                src="/images/hero-basquete.png"
-                alt="Treinador orientando jovens em uma quadra de basquete"
+                src={siteImages.hero}
+                alt="Crianças do Instituto Gomes Basquete em atividade de basquete"
                 fill
                 priority
                 sizes="(min-width: 1024px) 54vw, 100vw"
@@ -102,8 +103,8 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
           <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-neutral-100">
             <Image
-              src="/images/treino-basquete.png"
-              alt="Crianças e adolescentes treinando basquete"
+              src={siteImages.project}
+              alt="Professor Dante de Rose com crianças do Instituto Gomes Basquete"
               fill
               loading="eager"
               sizes="(min-width: 1024px) 42vw, 100vw"
@@ -112,10 +113,10 @@ export default function Home() {
           </div>
 
           <div>
-            <SectionHeading
-              label="Projeto"
-              title="Acolhimento, esporte e formação no mesmo lugar."
-              description="A Home apresenta o essencial. A história, os registros, os depoimentos e os parceiros ficam organizados em páginas internas para o site continuar leve e fácil de navegar."
+              <SectionHeading
+                label="Projeto"
+                title="Acolhimento, esporte e formação no mesmo lugar."
+              description="O Instituto Gomes Basquete cria um ambiente seguro para aprender, treinar e conviver. A quadra é o ponto de encontro para fortalecer disciplina, autoestima e novas oportunidades."
             />
             <div className="mt-8 grid gap-4 md:grid-cols-3">
               {pillars.map((pillar) => (
@@ -149,7 +150,7 @@ export default function Home() {
               Atividades atuais em destaque.
             </h2>
             <p className="max-w-2xl text-lg leading-8 text-neutral-300 md:justify-self-end">
-              Basquete, xadrez e fitboxe seguem como frentes principais para
+              Basquete, xadrez e fitbox seguem como frentes principais para
               esporte, foco, saúde e convivência.
             </p>
           </div>
@@ -194,10 +195,10 @@ export default function Home() {
       <AnimatedSection className="bg-white py-16 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[1fr_1fr] lg:items-center">
           <div>
-            <SectionHeading
-              label="Agenda semanal"
-              title="Horários fixos para aprender, treinar e participar."
-              description="A programação atual fica destacada na Home e detalhada na página de atividades."
+              <SectionHeading
+                label="Agenda semanal"
+                title="Horários fixos para aprender, treinar e participar."
+              description="As atividades acontecem em dias definidos para que as famílias acompanhem a rotina e os jovens mantenham frequência no projeto."
             />
             <div className="mt-8 divide-y divide-neutral-200 border-y border-neutral-200">
               {scheduleRows.map((row) => (
@@ -215,8 +216,8 @@ export default function Home() {
 
           <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-neutral-100">
             <Image
-              src="/images/atividades-comunidade.png"
-              alt="Jovens em atividades de xadrez e fitboxe"
+              src={siteImages.activities}
+              alt="Crianças e adolescentes em treino coletivo de basquete"
               fill
               loading="eager"
               sizes="(min-width: 1024px) 42vw, 100vw"

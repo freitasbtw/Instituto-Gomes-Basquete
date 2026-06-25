@@ -56,6 +56,13 @@ export const socialLinks = [
   },
 ]
 
+export const siteImages = {
+  hero: "/images/site/clinica-dante-acao.jpeg",
+  project: "/images/site/clinica-dante-grupo-criancas.jpeg",
+  activities: "/images/site/clinica-dante-roda.jpeg",
+  history: "/images/site/clinica-dante-grupo-jovens.jpeg",
+}
+
 export const activities = [
   {
     title: "Basquete",
@@ -72,7 +79,7 @@ export const activities = [
     icon: Brain,
   },
   {
-    title: "Fitboxe",
+    title: "Fitbox",
     description:
       "Treino de alta intensidade com movimentos de lutas e exercícios funcionais no ritmo da música.",
     schedule: "Quintas, 8h às 9h",
@@ -103,22 +110,118 @@ export const pillars = [
 
 export const memoryAreas = [
   {
-    title: "Depoimentos históricos",
+    title: "Histórias de atletas",
     description:
-      "Espaço para organizar relatos de antigos atletas registrados quando tinham entre 15 e 17 anos.",
+      "Relatos de jovens, famílias e ex-atletas que mostram como o esporte marca a vida dentro e fora da quadra.",
     icon: MessageSquareText,
   },
   {
-    title: "Jogos e treinos antigos",
+    title: "Vivência na quadra",
     description:
-      "Galeria para fotos, vídeos e registros de temporadas anteriores do instituto.",
+      "Treinos, jogos, clínicas e encontros que revelam a rotina de aprendizado do Instituto.",
     icon: Images,
   },
   {
-    title: "Reportagens e marcos",
+    title: "Eventos e conquistas",
     description:
-      "Arquivo para matérias, conquistas, eventos e momentos importantes da instituição.",
+      "Momentos importantes da trajetória, parcerias, reportagens e ações que fortaleceram o projeto.",
     icon: History,
+  },
+]
+
+export const historyTimeline = [
+  {
+    period: "Clínica de basquete",
+    title: "Clínica com o professor Dante de Rose",
+    description:
+      "Um encontro de formação esportiva com crianças e adolescentes do Instituto, unindo fundamentos do basquete, convivência e referência técnica dentro da quadra.",
+    images: [
+      {
+        src: "/images/site/clinica-dante-grupo-jovens.jpeg",
+        alt: "Professor Dante de Rose, Maurício Gomes e jovens do Instituto Gomes Basquete reunidos após clínica de basquete",
+      },
+      {
+        src: "/images/site/clinica-dante-roda.jpeg",
+        alt: "Crianças e adolescentes em roda de treino durante clínica de basquete",
+      },
+      {
+        src: "/images/site/clinica-dante-drible.jpeg",
+        alt: "Atletas do Instituto praticando drible durante clínica de basquete",
+      },
+    ],
+  },
+  {
+    period: "Registros antigos",
+    title: "ALL Star Game IGB",
+    description:
+      "Um evento marcante da história do Instituto, com atletas em quadra, momentos de treino, orientação e fotos de equipe.",
+    images: [
+      {
+        src: "/images/site/all-star-grupo-geral.jpeg",
+        alt: "Atletas do Instituto Gomes Basquete reunidos no ALL Star Game IGB",
+      },
+      {
+        src: "/images/site/all-star-equipe-branca.jpeg",
+        alt: "Equipe de atletas em uniforme branco no ALL Star Game IGB",
+      },
+      {
+        src: "/images/site/all-star-drible-treino.jpeg",
+        alt: "Atletas em exercício de drible durante treino antigo do instituto",
+      },
+    ],
+  },
+]
+
+export const historicalGallery = [
+  {
+    src: "/images/site/clinica-dante-acao.jpeg",
+    alt: "Crianças em atividade durante clínica de basquete do Instituto Gomes Basquete",
+    caption: "Clínica em movimento",
+  },
+  {
+    src: "/images/site/clinica-dante-grupo-criancas.jpeg",
+    alt: "Professor Dante de Rose com crianças do Instituto Gomes Basquete",
+    caption: "Professor Dante de Rose",
+  },
+  {
+    src: "/images/site/clinica-dante-roda.jpeg",
+    alt: "Treino coletivo durante clínica de basquete",
+    caption: "Treino coletivo",
+  },
+  {
+    src: "/images/site/clinica-dante-quadra.jpeg",
+    alt: "Atletas participando de atividade na quadra",
+    caption: "Fundamentos em quadra",
+  },
+  {
+    src: "/images/site/all-star-grupo-geral.jpeg",
+    alt: "Grupo de atletas reunidos no ALL Star Game IGB",
+    caption: "Grupo reunido",
+  },
+  {
+    src: "/images/site/all-star-equipe-branca.jpeg",
+    alt: "Atletas do instituto em uniforme branco com treinador",
+    caption: "Equipe e treinador",
+  },
+  {
+    src: "/images/site/all-star-equipe-laranja.jpeg",
+    alt: "Atletas em uniforme laranja em foto de equipe",
+    caption: "Foto de equipe",
+  },
+  {
+    src: "/images/site/all-star-banco-atletas.jpeg",
+    alt: "Atletas sentados na lateral da quadra aguardando o treino",
+    caption: "Bastidor da quadra",
+  },
+  {
+    src: "/images/site/all-star-arremesso.jpeg",
+    alt: "Atleta apontando em atividade com bolas durante o ALL Star Game IGB",
+    caption: "Dinâmica do evento",
+  },
+  {
+    src: "/images/site/all-star-drible-treino.jpeg",
+    alt: "Atletas em movimento durante exercício de drible",
+    caption: "Treino em movimento",
   },
 ]
 
@@ -169,7 +272,7 @@ export const scheduleRows = [
     icon: CalendarDays,
   },
   {
-    title: "Fitboxe",
+    title: "Fitbox",
     description:
       "Lutas e exercícios funcionais no ritmo da música, com foco em condicionamento e bem-estar.",
     time: "Quintas, 8h às 9h",
