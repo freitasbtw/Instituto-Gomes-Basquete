@@ -23,6 +23,18 @@ export const whatsappUrl = `https://api.whatsapp.com/send?phone=555511952929246&
 
 export const email = "institutogomesbasquete@gmail.com"
 
+export const instagramUrl = "https://www.instagram.com/instituto_gomesbasquete/"
+
+export const facebookUrl =
+  "https://web.facebook.com/p/Instituto-Gomes-Basquete-100041372181550/?_rdc=1&_rdr#"
+
+const facebookPluginPageUrl =
+  "https://www.facebook.com/p/Instituto-Gomes-Basquete-100041372181550/"
+
+export const facebookWidgetUrl = `https://www.facebook.com/plugins/page.php?href=${encodeURIComponent(
+  facebookPluginPageUrl
+)}&tabs=timeline&width=500&height=560&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true`
+
 export const address =
   "Av. Cônego José Salomon, 755 - Jardim Felicidade (Zona Norte), São Paulo - SP, 02918-170"
 
@@ -45,7 +57,7 @@ export const navItems = [
 export const socialLinks = [
   {
     label: "Instagram",
-    href: "https://www.instagram.com/instituto_gomesbasquete/",
+    href: instagramUrl,
     icon: FaInstagram,
   },
   {
@@ -55,7 +67,7 @@ export const socialLinks = [
   },
   {
     label: "Facebook",
-    href: "https://facebook.com/p/Instituto-Gomes-Basquete-100041372181550/?_rdc=1&_rdr#",
+    href: facebookUrl,
     icon: FaFacebookF,
   },
 ]
@@ -66,6 +78,33 @@ export const siteImages = {
   activities: "/images/site/clinica-dante-roda.jpeg",
   history: "/images/site/clinica-dante-grupo-jovens.jpeg",
 }
+
+export const socialPreviewImages = [
+  {
+    src: "/images/site/clinica-dante-acao.jpeg",
+    alt: "Jovens do Instituto Gomes Basquete em atividade na quadra",
+  },
+  {
+    src: "/images/site/clinica-dante-grupo-criancas.jpeg",
+    alt: "Crianças reunidas com o professor Dante de Rose",
+  },
+  {
+    src: "/images/site/all-star-equipe-laranja.jpeg",
+    alt: "Equipe do Instituto Gomes Basquete em uniforme laranja",
+  },
+  {
+    src: "/images/site/all-star-arremesso.jpeg",
+    alt: "Atleta em dinâmica de arremesso durante evento do instituto",
+  },
+  {
+    src: "/images/site/clinica-dante-drible.jpeg",
+    alt: "Atletas praticando fundamentos de drible",
+  },
+  {
+    src: "/images/site/all-star-banco-atletas.jpeg",
+    alt: "Atletas aguardando na lateral da quadra",
+  },
+]
 
 export const activities = [
   {

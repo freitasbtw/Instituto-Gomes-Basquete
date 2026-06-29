@@ -5,6 +5,7 @@ import { FaWhatsapp } from "react-icons/fa6"
 
 import { AnimatedSection } from "@/components/site/animated-section"
 import { SectionHeading } from "@/components/site/section-heading"
+import { SocialWidgets } from "@/components/site/social-widgets"
 import { buttonVariants } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import {
@@ -226,6 +227,8 @@ export default function Home() {
           </div>
         </div>
       </AnimatedSection>
+
+      <SocialWidgets />
 
       <AnimatedSection className="border-t border-neutral-200 bg-white py-16 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
