@@ -79,33 +79,6 @@ export const siteImages = {
   history: "/images/site/clinica-dante-grupo-jovens.jpeg",
 }
 
-export const socialPreviewImages = [
-  {
-    src: "/images/site/clinica-dante-acao.jpeg",
-    alt: "Jovens do Instituto Gomes Basquete em atividade na quadra",
-  },
-  {
-    src: "/images/site/clinica-dante-grupo-criancas.jpeg",
-    alt: "Crianças reunidas com o professor Dante de Rose",
-  },
-  {
-    src: "/images/site/all-star-equipe-laranja.jpeg",
-    alt: "Equipe do Instituto Gomes Basquete em uniforme laranja",
-  },
-  {
-    src: "/images/site/all-star-arremesso.jpeg",
-    alt: "Atleta em dinâmica de arremesso durante evento do instituto",
-  },
-  {
-    src: "/images/site/clinica-dante-drible.jpeg",
-    alt: "Atletas praticando fundamentos de drible",
-  },
-  {
-    src: "/images/site/all-star-banco-atletas.jpeg",
-    alt: "Atletas aguardando na lateral da quadra",
-  },
-]
-
 export const activities = [
   {
     title: "Basquete",
